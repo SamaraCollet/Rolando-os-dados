@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title {
+    display: flex;
+    background-color: #c23dffc2;
+    min-height: 8vh;
+    color: white;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    background-color: #f573c3ab;
+    min-height: 7vh;
+    margin-top: 0.5vh;
+    color: hsl(244, 78%, 37%);
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-left: 2vw;
+}
+
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width:768px) and (max-width:979px) {
+    .title {
+        background-color: #1a1950ea;
+        font-size: 1.4em;
+        justify-content: center;
+    }
+    
+    .bar {
+        background-color: #2422afab;
+        color: hsl(0, 0%, 100%);
+    }
+}
+
+/* Telefones em paisagem a tablet em retrato */
+@media only screen and (max-width: 767px) {
+    .title {
+        background-color: #570b7aea;
+        min-height: 9vh;
+        color: white;
+        font-size: 1.7em;
+        justify-content: center;
+    }
+    
+    .bar {
+        min-width: 18%;
+        background-color: #882060ab;
+        min-height: 6.5vh;
+        color: hsl(0, 0%, 100%);
+        font-size: 1.2em;
+        padding-left: 3vw;
+
+    }
+}
+
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) {
+    .title {
+        background-color: #2a7a0bea;
+        font-size: 1.3em;
+    }
+    
+    .bar {
+        background-color: #16b416d2;
+        font-size: 1.2em;
+    }
+}
